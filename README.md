@@ -46,6 +46,26 @@ my public nixos config
 - `cat ~/.ssh/id_ed25519.pub` make sure this is the public one
 - github > add new ssh key > paste
 
+- `sudo mv /etc/nixos /etc/nixos-backup`
+- `mkdir ~/nixos-config`
+- `sudo ln -s ~/nixos-testing /etc/nixos`
+- `cp /etc/nixos-backup/* ~/nixos-config`
+- `ls ~/nixos-config`
+- `ls /etc/nixos`
+- should both have the files in
+
+- `cd nixos-config`
+- `git init`
+- `git branch -m main`
+- `git add ./`
+- `git commit -m "Initial nixos configuration"`
+- `git remote add "origin" git@github.com:SylviaWhittle/nixos-config.git`
+- `git branch --set-upstream-to=origin/main main`
+- `git config pull.rebase false`
+- `git pull`
+- `git push`
+
+now i have a git tracked flake config ✨
 
 
 

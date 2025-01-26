@@ -106,16 +106,17 @@
     };
   };
 
+  fonts.packages = with pkgs; [
+    noto-fonts
+    noto-fonts-emoji
+    fira-code
+    fira-code-symbols
+    nerd-fonts.caskaydia-cove
+  ];
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    # fonts
-    noto-fonts
-    noto-fonts-extra
-    noto-fonts-emoji
-    nerd-fonts.jetbrains-mono
-    nerd-fonts.caskaydia-cove
-    nerd-fonts.caskaydia-mono
 
     # terminal utils
     wget

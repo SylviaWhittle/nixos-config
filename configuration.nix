@@ -113,6 +113,9 @@
     wget
     git
 
+    # bar
+    hyprpanel
+
     # terminals
     kitty
 

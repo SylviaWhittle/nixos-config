@@ -125,6 +125,9 @@
     # bar
     hyprpanel
 
+    # launcher
+    rofi-wayland
+
     # terminals
     kitty
 

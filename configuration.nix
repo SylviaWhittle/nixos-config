@@ -109,6 +109,14 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    # fonts
+    noto-fonts
+    noto-fonts-extra
+    noto-fonts-emoji
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.caskaydia-cove
+    nerd-fonts.caskaydia-mono
+
     # terminal utils
     wget
     git

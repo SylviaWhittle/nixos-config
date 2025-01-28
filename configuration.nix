@@ -14,6 +14,8 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  hardware.nvidia.open = false;
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   networking.hostName = "nixos"; # Define your hostname.
@@ -46,6 +48,9 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
+  # THIS IS NEEDED FOR CORRECT CURSOR PLACEMENT, ELSE I
+  # GET THE FUCKING ANNOYING ROTATED MONITOR OFFSET ISSUE
+  services.xserver.videoDrivers = ["nvidia"];
 
   # Enable the GNOME Desktop Environment.
   #services.xserver.displayManager.gdm.enable = true;

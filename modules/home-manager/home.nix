@@ -8,6 +8,11 @@
   home.username = "doe";
   home.homeDirectory = "/home/doe";
 
+  imports = [
+    ./ghostty.nix
+  ];
+
+  # set cursor theme
   home.pointerCursor = {
     gtk.enable = true;
     # x11.enable = true;

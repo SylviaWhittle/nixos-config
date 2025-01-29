@@ -118,6 +118,8 @@
     fira-code
     fira-code-symbols
     nerd-fonts.caskaydia-cove
+    nerd-fonts.agave
+    nerd-fonts.symbols-only
   ];
 
   # List packages installed in system profile. To search, run:

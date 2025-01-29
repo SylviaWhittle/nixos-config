@@ -11,6 +11,7 @@
   imports = [
     ./ghostty.nix
     ./hyprpaper.nix
+    ./btop.nix
   ];
 
   # set cursor theme
@@ -24,7 +25,6 @@
 
   home.packages = with pkgs; [
     # terminal utils
-    btop
   ];
 
   programs.git = {

@@ -130,6 +130,7 @@
     wget
     git
     tree
+    wl-clipboard # clipboard support
 
     # file managers
     yazi

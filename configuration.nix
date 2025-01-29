@@ -129,9 +129,17 @@
     # terminal utils
     wget
     git
+    tree
+
+    # file managers
+    yazi
 
     # bar
     hyprpanel
+
+    hyprshot # screenshot
+    hyprpaper # wallpaper
+    hyprpicker # colour picker
 
     # launcher
     rofi-wayland

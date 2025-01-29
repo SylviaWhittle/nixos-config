@@ -122,15 +122,26 @@
     nerd-fonts.symbols-only
   ];
 
+  programs.steam.enable = true;
+  programs.steam.gamescopeSession.enable = true;
+  programs.gamemode.enable = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
 
     # terminal utils
+    eza # ls replacement
+    bat # cat replacement
     wget
     git
     tree
     wl-clipboard # clipboard support
+    sysstat
+    lm_sensors # for 'sensors' command
+    ethtool
+    pciutils # lspci
+    usbutils # lsusb
 
     # file managers
     yazi
@@ -147,9 +158,18 @@
     # terminals
     kitty
 
+    # compatibility
+    heroic
+    bottles
+    lutris
+    mangohud
+
     # editors
     neovim
-   
+    vscode
+    gimp # images (pixel)
+    inkscape # images (vector)
+
     # social
     vesktop
   ];

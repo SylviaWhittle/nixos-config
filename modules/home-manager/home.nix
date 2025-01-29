@@ -10,6 +10,7 @@
 
   imports = [
     ./ghostty.nix
+    ./hyprpaper.nix
   ];
 
   # set cursor theme

@@ -139,7 +139,6 @@
     hyprpanel
 
     hyprshot # screenshot
-    hyprpaper # wallpaper
     hyprpicker # colour picker
 
     # launcher

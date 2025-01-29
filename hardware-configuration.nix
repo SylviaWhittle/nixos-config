@@ -24,6 +24,21 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
+  fileSystems."/mnt/minishare" =
+    { device = "//192.168.0.140/t7shared";
+      fsType = "cifs";
+      options = let
+        # prevent hang on network split
+        automount_opts = "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
+
+      in ["${automount_opts},credentials=/etc/nixos/secrets/smb-secrets"];
+    };
+
+  fileSystems."/mnt/purple" =
+    { device = "/dev/disk/by-uuid/4a66b671-1894-4d0f-9b2c-949a374f3b87";
+      fsType = "ext4";
+    };
+
   swapDevices =
     [ { device = "/dev/disk/by-uuid/7def4726-ffb5-4341-a129-ce03d09d3b48"; }
     ];

@@ -143,6 +143,9 @@
     pciutils # lspci
     usbutils # lsusb
 
+    # for mounting network drives
+    cifs-utils
+
     # file managers
     yazi
 

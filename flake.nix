@@ -20,7 +20,7 @@
       modules = [
         {nixpkgs.overlays = [inputs.hyprpanel.overlay];}
 
-        ./configuration.nix
+        ./modules/system/configuration.nix
 
 	# home manager setup
         home-manager.nixosModules.home-manager {

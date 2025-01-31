@@ -16,6 +16,7 @@
     ./btop.nix
     ./starship.nix
     ./cava.nix
+    ./emacs.nix
   ];
 
   # set cursor theme

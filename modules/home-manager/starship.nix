@@ -3,7 +3,7 @@
   programs.starship.enable = true;
   programs.starship.enableZshIntegration = true;
   programs.starship.settings = {
-    format = "$directory$all\n$os$username$hostname$character";
+    format = "$directory$all$line_break$os$username$hostname$character";
     add_newline = true;
     palette = "custom";
     palettes.custom = {

@@ -13,6 +13,7 @@
     ./ghostty.nix
     ./hyprpaper.nix
     ./btop.nix
+    ./starship.nix
   ];
 
   # set cursor theme

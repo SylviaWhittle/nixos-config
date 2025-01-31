@@ -9,6 +9,7 @@
   home.homeDirectory = "/home/doe";
 
   imports = [
+    ./zsh.nix
     ./fastfetch.nix
     ./ghostty.nix
     ./hyprpaper.nix

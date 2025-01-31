@@ -14,6 +14,7 @@
     ./hyprpaper.nix
     ./btop.nix
     ./starship.nix
+    ./cava.nix
   ];
 
   # set cursor theme

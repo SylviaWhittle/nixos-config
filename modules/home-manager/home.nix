@@ -17,6 +17,7 @@
     ./starship.nix
     ./cava.nix
     ./emacs.nix
+    ./nvim.nix
   ];
 
   # set cursor theme

@@ -171,7 +171,7 @@
     mangohud
 
     # editors
-    neovim
+    #neovim
     vscode
     gimp # images (pixel)
     inkscape # images (vector)

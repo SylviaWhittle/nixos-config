@@ -13,8 +13,9 @@
       window-decoration = false;
       confirm-close-surface = false;
       
-      #theme = "Everforest Dark - Hard";
-      theme = "GruvboxDarkHard";
+      theme = "Everforest Dark - Hard";
+      #theme = "GruvboxDarkHard";
+      #theme = "Banana Blueberry";
     };
   };
 }

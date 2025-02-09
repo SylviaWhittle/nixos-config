@@ -18,6 +18,7 @@
     ./cava.nix
     ./emacs.nix
     ./nvim.nix
+    ./waybar
   ];
 
   # set cursor theme

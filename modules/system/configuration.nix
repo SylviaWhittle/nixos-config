@@ -148,6 +148,10 @@
     pciutils # lspci
     usbutils # lsusb
 
+    # pulse audio programs
+    pavucontrol
+    pulsemixer
+
     # for mounting network drives
     cifs-utils
 

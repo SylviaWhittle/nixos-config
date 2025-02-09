@@ -1,0 +1,187 @@
+{
+  "custom/window": {
+    "format": "  ",
+    "tooltip": false,
+    "min-length": 3,
+    "max-length": 3
+  },
+  "custom/nix": {
+    "format": "   ",
+    "tooltip": false
+  },
+  "custom/paddw": {
+    "format": " ",
+    "tooltip": false
+  },
+  "custom/paddc": {
+    "format": " ",
+    "tooltip": false
+  },
+	"layer": "top",
+	"custom/left1": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right1": {
+		"format": "",
+		"tooltip": false
+	},
+  "custom/left2": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/right2": {
+		"format": "",
+		"tooltip": false
+	},
+  "custom/left3": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/right3": {
+		"format": "",
+		"tooltip": false
+	},
+  "custom/left4": {
+    "format": "",
+    "tooltip": false
+  },
+	"custom/right4": {
+		"format": "",
+		"tooltip": false
+	},
+  "custom/left5": {
+    "format": "",
+    "tooltip": false
+  },
+	"custom/right5": {
+		"format": "",
+		"tooltip": false
+	},
+  "custom/leftin1": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/rightin1": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/leftin2": {
+    "format": "",
+    "tooltip": false
+  },
+	"hyprland/workspaces": {
+		"disable-scroll": false,
+    "all-outputs": true,
+		"format": "{icon}",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "urgent": "",
+      "focused": "",
+      "default": ""
+    }
+	},
+	"clock": {
+    "interval": 60,
+		"format": "{:%H:%M}",
+		"tooltip": false
+	},
+	"pulseaudio": {
+		"format": "{icon} {volume:2}%",
+		"format-bluetooth": "{icon}  {volume}%",
+		"format-muted": "MUTE",
+		"format-icons": {
+			"headphones": "",
+			"default": [
+				"",
+				""
+			]
+		},
+		"scroll-step": 5,
+		"on-click": "pulsemixer",
+		"on-click-right": "pavucontrol"
+	},
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 200,
+    "orientation": "horizontal"
+  },
+  "memory": {
+    "states": {
+      "warning": 75,
+      "critical": 90
+    },
+
+    "format": "󰘚 {percentage}%",
+    "format-critical": "󰀦 {percentage}%",
+    "tooltip": true,
+    "tooltip-format": "Memory Used: {used:0.1f} GB / {total:0.1f} GB",
+    "interval": 5,
+    "min-length": 7,
+    "max-length": 7
+  },
+  "cpu": {
+    "format": "󰻠 {usage}%",
+    "tooltip": false,
+    "interval": 5,
+    "min-length": 6,
+    "max-length": 6
+  },
+  "cava": {
+    "framerate": 30,
+    "autosens": 1,
+    "sensitivity": 5,
+    "bars": 14,
+    "bar_delimiter": 0,
+    "lower_cutoff_freq": 50,
+    "higher_cutoff_freq": 10000,
+    "method": "pulse",
+    "source": "auto",
+    "stereo": true,
+    "reverse": false,
+    "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+    "actions": {
+      "on-click-right": "mode"
+    },
+  },
+  "bluetooth": {
+    "format": "󰂰",
+    "format-disabled": "󰂲",
+    "format-connected": "󰂱",
+    "format-connected-battery": "󰂱",
+
+    "tooltip-format": 
+      "{num_connections} connected",
+    "tooltip-format-disabled": 
+      "Bluetooth Disabled",
+    "tooltip-format-connected": 
+      "{num_connections} connected\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": 
+      "{device_alias}",
+    "tooltip-format-enumerate-connected-battery": 
+      "{device_alias}: {device_battery_percentage}%",
+
+    "on-click": "~/.config/waybar/scripts/bluetooth-menu.sh",
+    "on-click-right": "kitty --title '󰂯  Bluetooth TUI' bash -c bluetui",
+    "interval": 1,
+    "min-length": 1,
+    "max-length": 1
+  },
+
+  "hyprland/window": {
+    "format": "{}",
+    "rewrite": {
+        "(.*) — Mozilla Firefox": "  $1",
+        "~/(.*)": "   [~/$1]",
+        "vim (.*)": "   [$1]",
+        "(.*) Slack Grid Workspaces - Slack": "   [$1]"
+    },
+    "max-length": 70,
+    "separate-outputs": true
+  }
+}

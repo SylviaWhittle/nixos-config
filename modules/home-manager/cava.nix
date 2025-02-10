@@ -2,6 +2,16 @@
   programs.cava = {
     enable = true;
     settings = {
+      general = {
+        mode = "scientific";
+        framerate = 120;
+        bar_width = 1;
+        bar_spacing = 1;
+      };
+      input = {
+        method = "pulse";
+        source = "auto";
+      };
       color = {
         gradient = 1;
         gradient_color_1 = "'#94e2d5'";

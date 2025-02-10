@@ -96,6 +96,7 @@ tooltip label {
 #bluetooth,
 #pulseaudio,
 #cpu,
+#mpd,
 #pulseaudio-slider {
   opacity: 1;
   color: @module-fg;
@@ -225,6 +226,10 @@ tooltip label {
 
 #cava {
   color: @cava;
+  background: @empty1;
+}
+
+#mpd {
   background: @empty1;
 }
 

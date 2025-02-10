@@ -34,7 +34,8 @@
           "clock"
           "custom/right3"
 
-          "cava"
+          #"cava"
+          #"mpd"
           "custom/right4"
           
           # network up

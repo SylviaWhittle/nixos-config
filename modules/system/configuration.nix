@@ -147,6 +147,7 @@
     wget
     git
     tree
+    xclip # more clipboard
     wl-clipboard # clipboard support
     sysstat
     lm_sensors # for 'sensors' command

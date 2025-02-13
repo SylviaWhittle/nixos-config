@@ -155,6 +155,9 @@
     pciutils # lspci
     usbutils # lsusb
 
+    # mounting tools
+    cifs-utils # for smb
+
     # pulse audio programs
     pavucontrol
     pulsemixer

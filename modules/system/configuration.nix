@@ -164,6 +164,9 @@
     # file managers
     yazi
 
+    # notes, literature
+    obsidian
+
     # bar
     hyprpanel
 

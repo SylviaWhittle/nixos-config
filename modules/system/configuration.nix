@@ -14,7 +14,10 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  hardware.nvidia.open = false;
+  hardware.nvidia = {
+    open = false;
+    modesetting.enable = true;
+  };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 

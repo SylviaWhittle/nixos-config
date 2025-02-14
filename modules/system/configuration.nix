@@ -157,13 +157,14 @@
 
     # mounting tools
     cifs-utils # for smb
+    exfat
 
     # pulse audio programs
     pavucontrol
     pulsemixer
 
     # for mounting network drives
-    cifs-utils
+    samba
 
     # file managers
     yazi
@@ -182,6 +183,9 @@
 
     # terminals
     kitty
+
+    # recording
+    obs-studio
 
     # compatibility
     heroic

@@ -69,12 +69,12 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  services.pulseaudio = {
-    enable = true;
-  };
+  #services.pulseaudio = {
+  #  enable = true;
+  #};
   security.rtkit.enable = true;
   services.pipewire = {
-    enable = false;
+    enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
@@ -122,6 +122,9 @@
       enable = true;
     };
   };
+
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
   fonts.packages = with pkgs; [
     noto-fonts

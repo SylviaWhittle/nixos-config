@@ -181,9 +181,6 @@
     hyprshot # screenshot
     hyprpicker # colour picker
 
-    # launcher
-    rofi-wayland
-
     # terminals
     kitty
 

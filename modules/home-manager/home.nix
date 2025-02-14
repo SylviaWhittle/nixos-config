@@ -19,6 +19,7 @@
     ./emacs.nix
     ./nvim.nix
     ./waybar
+    ./rofi
   ];
 
   # set cursor theme

@@ -33,6 +33,7 @@
 
   home.packages = with pkgs; [
     # terminal utils
+    prismlauncher
   ];
 
   programs.git = {

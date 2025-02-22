@@ -18,6 +18,9 @@
     open = false;
     modesetting.enable = true;
   };
+  hardware.graphics.extraPackages = with pkgs; [
+    nvidia-vaapi-driver
+  ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -174,6 +177,8 @@
 
     # notes, literature
     obsidian
+
+    protonvpn-gui # vpn
 
     # bar
     hyprpanel

@@ -177,6 +177,7 @@
 
     # notes, literature
     obsidian
+    standardnotes
 
     protonvpn-gui # vpn
 

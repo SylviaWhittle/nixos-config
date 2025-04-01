@@ -67,6 +67,9 @@ my public nixos config
 
 now i have a git tracked flake config ✨
 
+## update OS
+`sudo nix flake update`
+
 
 
  
